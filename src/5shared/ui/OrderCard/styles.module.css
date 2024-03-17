@@ -1,0 +1,47 @@
+.orderCard {
+  width: 330px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 30px 30px 155px #acadb9;
+}
+
+.orderCardInfo {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 17px;
+}
+
+.orderName {
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 600;
+  text-align: start;
+}
+
+.orderStatus {
+  font-family: Poppins;
+  font-size: 10px;
+  line-height: 140%;
+  font-weight: 500;
+  text-align: start;
+  margin-bottom: 4px;
+}
+.orderPicture {
+  margin-left: 15px;
+}
+
+.orderDeliverTime {
+  margin-left: 43px;
+  margin-bottom: 13px;
+  font-family: Poppins;
+  font-size: 10px;
+  line-height: 140%;
+  color: #acadb9;
+  align-self: flex-end;
+}

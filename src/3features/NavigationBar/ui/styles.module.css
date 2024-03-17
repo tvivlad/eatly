@@ -1,0 +1,13 @@
+.link {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: medium;
+  color: #606060;
+  text-decoration: none;
+  margin-right: 52px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}

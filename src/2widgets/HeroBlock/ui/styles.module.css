@@ -1,0 +1,48 @@
+.overContainer {
+  display: flex;
+  align-items: center;
+}
+
+.overLine {
+  width: 54px;
+  height: 1px;
+  border-top: 2px solid #201f1f;
+  opacity: 0.2;
+}
+
+.overText {
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-left: 20px;
+  margin-bottom: 17px;
+  text-align: left;
+  color: #201f1f;
+  opacity: 0.2;
+}
+
+.heroBlock {
+  margin-top: 118px;
+  margin-left: 95px;
+  /* border: 1px solid black; */
+  width: 584px;
+  height: 430px;
+}
+
+.heroText {
+  margin-top: 13px;
+  width: 499px;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 28px;
+}
+.heroButtons {
+  margin-top: 53px;
+  text-align: start;
+  width: 290px;
+  display: flex;
+  justify-content: space-between;
+}

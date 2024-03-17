@@ -1,0 +1,52 @@
+.hero {
+  /* display: flex; */
+  margin-left: 37px;
+  margin-top: 48px;
+  width: 680px;
+  height: 607px;
+  position: relative;
+  /* border: 1px solid black; */
+}
+
+.illustration2 {
+  width: 39px;
+  height: 36px;
+  position: absolute;
+  left: -16px;
+  bottom: 0px;
+}
+
+.graph {
+  width: 284px;
+  height: 265px;
+  position: absolute;
+  left: -3px;
+  bottom: -13px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.food {
+  width: 448px;
+  height: 455px;
+  position: absolute;
+  left: 95px;
+  top: 87px;
+  z-index: 0;
+}
+
+.arrow {
+  width: 101px;
+  height: 97px;
+  position: absolute;
+  top: 141px;
+  right: 79px;
+}
+
+.illustration1 {
+  width: 41px;
+  height: 24px;
+  position: absolute;
+  top: 0px;
+  right: 17px;
+}
