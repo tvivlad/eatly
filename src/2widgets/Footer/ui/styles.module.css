@@ -1,0 +1,46 @@
+.footer {
+  background-color: #eaeaea;
+  width: 1440px;
+  height: 345px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerNav {
+  width: 1248px;
+  margin-top: 96px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #818181;
+}
+
+.logo {
+  width: 150px;
+  height: 57px;
+  margin-top: 9px;
+  margin-right: 98px;
+}
+
+.lower {
+  width: 1248px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: #999999;
+}
+
+.socialMedia {
+}
+
+.socialIcon {
+  margin: 45px 25px;
+}

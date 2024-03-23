@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import classes from './style.module.css'
-
+import star from '../../assets/Star.png'
 interface DishCardProps {
   category: string
   name: string
@@ -22,7 +22,8 @@ export const DishCard: FC<DishCardProps> = ({
       <div className={classes.category}>{category}</div>
       <div className={classes.name}>{name}</div>
       <div className={classes.time}>
-        {dishCookingTime} * {rating}
+        {dishCookingTime} • <img src={star} className={classes.star} alt='' />{' '}
+        {rating}
       </div>
     </div>
   )

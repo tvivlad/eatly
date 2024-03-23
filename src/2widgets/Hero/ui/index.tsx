@@ -28,7 +28,6 @@ export const Hero = () => {
           orderStatus={'On the Way'}
           orderDeliverTime={'3:09 PM'}
           orderPicture={image}
-          isActive={true}
         />
       </div>
       <img className={classes.food} src={food} alt='' />

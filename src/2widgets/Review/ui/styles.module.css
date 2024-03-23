@@ -1,0 +1,11 @@
+.review {
+  margin-top: 136px;
+  padding-top: 116px;
+  border-top: 1px solid #cbcbcb;
+  width: 1440px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid black; */
+}

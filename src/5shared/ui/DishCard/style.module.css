@@ -35,9 +35,14 @@
   line-height: 26px;
   color: #8e97a6;
   text-align: left;
+  display: flex;
 }
 
 .dishPict {
   /* object-fit: cover; */
   height: 176px;
+}
+
+.star {
+  padding: 0px;
 }

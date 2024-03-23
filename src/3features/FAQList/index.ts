@@ -1,0 +1,1 @@
+import { FAQList } from './ui'

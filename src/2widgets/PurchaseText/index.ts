@@ -1,0 +1,1 @@
+import { PurchaseText } from './ui'
