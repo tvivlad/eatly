@@ -1,0 +1,1 @@
+import { ArticleDetailPage } from './ui'

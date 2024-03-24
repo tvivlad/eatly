@@ -1,0 +1,22 @@
+/* .forward * {
+  fill: brown;
+}
+
+.backward * {
+  fill: violet;
+} */
+
+.arrowBlock {
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+
+.arrowEnabled * {
+  fill: #605e5e;
+}
+
+.arrowDisabled * {
+  fill: #cecece;
+}

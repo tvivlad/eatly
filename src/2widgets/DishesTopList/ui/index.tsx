@@ -6,7 +6,7 @@ import dishImage from './Mask Group1.png'
 
 export const DishesTopList = () => {
   return (
-    <div className={classes.dishesTopList}>
+    <div id='top' className={classes.dishesTopList}>
       <Title size={'45px'} weight={600} lineHeight={'26px'} letterSpace={'0px'}>
         Our Top <span style={{ color: '#6C5FBC' }}>Lunch</span>
       </Title>

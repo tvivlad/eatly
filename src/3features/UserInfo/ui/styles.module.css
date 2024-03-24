@@ -1,0 +1,11 @@
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+
+.userImage {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
