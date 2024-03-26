@@ -5,8 +5,8 @@ export const articleAPI = createApi({
   reducerPath: 'ArticleAPI',
   baseQuery: fetchBaseQuery({ baseUrl: 'https://dummyjson.com' }),
   endpoints: (build) => ({
-    fetchArticleById: build.query<IArticle, number>({
-      query: (articleId: number) => ({
+    fetchArticleById: build.query<IArticle, string>({
+      query: (articleId: string) => ({
         url: `/posts/${articleId}`,
       }),
     }),

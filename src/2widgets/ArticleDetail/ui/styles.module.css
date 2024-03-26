@@ -1,18 +1,42 @@
 .articleDetail {
-  width: 100%;
-  height: 500px;
+  /* height: 500px; */
+  margin: 125px 100px 35px;
 }
 .articleHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 35px;
 }
 .articleTitle {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 45px;
 }
+
 .rating {
   font-family: Manrope;
   font-weight: 400;
   font-size: 20px;
   display: flex;
-  justify-content: baseline;
+  justify-content: end;
+}
+
+.articleTags {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8d8d8d;
+}
+
+.text {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 45px;
+  text-align: justify;
+  margin-top: 60px;
+  margin-bottom: 90px;
 }

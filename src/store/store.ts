@@ -4,6 +4,7 @@ import { postAPI } from '../services/PostService'
 import { commentAPI } from '../services/CommentService'
 import { userAPI } from '../services/UserService'
 import { articleAPI } from '../services/ArticleService'
+import { articleCommentAPI } from '../services/ArticleCommentService'
 
 const rootReducer = combineReducers({
   [commentAPI.reducerPath]: commentAPI.reducer,
@@ -11,6 +12,7 @@ const rootReducer = combineReducers({
   postNavReducer,
   [userAPI.reducerPath]: userAPI.reducer,
   [articleAPI.reducerPath]: articleAPI.reducer,
+  [articleCommentAPI.reducerPath]: articleCommentAPI.reducer,
 })
 
 export const setupStore = () => {
@@ -21,7 +23,8 @@ export const setupStore = () => {
         postAPI.middleware,
         commentAPI.middleware,
         userAPI.middleware,
-        articleAPI.middleware
+        articleAPI.middleware,
+        articleCommentAPI.middleware
       ),
   })
 }

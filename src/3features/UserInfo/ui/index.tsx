@@ -12,8 +12,8 @@ export const UserInfo: FC<userIdProps> = ({ userId }) => {
     <div className={classes.userInfo}>
       <img src={data?.image} className={classes.userImage} />
       <div>
-        <div>Written By</div>
-        <div>
+        <div className={classes.writtenBy}>Written By</div>
+        <div className={classes.firstLastName}>
           {data?.firstName} {data?.lastName}
         </div>
       </div>

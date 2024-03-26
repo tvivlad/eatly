@@ -4,10 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { MainPage } from './1pages/MainPage/ui'
 import { BlogPage } from './1pages/BlogPage/ui'
 import { ArticleDetailPage } from './1pages/ArticleDetailPage/ui'
-
-interface RouterProps {
-  children: Element[]
-}
+import { Error404Page } from './1pages/Error404Page/ui'
 
 function App() {
   return (
@@ -16,7 +13,7 @@ function App() {
         <Route path={'/'} element={<MainPage />} />
         <Route path={'/blog'} element={<BlogPage />} />
         <Route path={'/blog/:id'} element={<ArticleDetailPage />} />
-        <Route path={'/art'} element={<ArticleDetailPage />} />
+        <Route path={'/error'} element={<Error404Page />} />
         <Route path={'*'} element={<MainPage />} />
       </Routes>
     </BrowserRouter>
