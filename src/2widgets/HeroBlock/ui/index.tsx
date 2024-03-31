@@ -16,13 +16,13 @@ export const HeroBlock = () => {
         letterSpace={'-3px'}
         lineHeight={'120%'}
       >
-        Enjoy Foods All Over The <span style={{ color: '#6C5FBC' }}>World</span>
+        Enjoy Foods All Over The <span className='violetForHeader'>World</span>
       </Title>
 
       <div className={classes.heroText}>
         EatLy help you set saving goals, earn cash back offers, Go to disclaimer
         for more details and get paychecks up to two days early. Get a{' '}
-        <span style={{ color: '#6C5FBC' }}>$20 bonus</span>.
+        <span className='violetForHeader'>$20 bonus</span>.
       </div>
       <div className={classes.heroButtons}>
         <Button btWidth={'154px'} btHeight={'60px'} btType={buttonType.filled}>

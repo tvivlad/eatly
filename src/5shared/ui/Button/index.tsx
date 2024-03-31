@@ -9,14 +9,16 @@ interface ButtonProps {
   btWidth: string
   btHeight: string
   btType: buttonType
-  children: React.ReactNode
+  children?: React.ReactNode
+  onClick?: () => void
 }
 
 export const Button: FC<ButtonProps> = ({
   btWidth,
   btHeight,
   btType,
-  children,
+  children = 'push',
+  onClick,
 }) => {
   return (
     <button
@@ -26,6 +28,7 @@ export const Button: FC<ButtonProps> = ({
           ? classes['filledBtn']
           : classes['outlinedBtn']
       }
+      onClick={onClick}
     >
       {children}
     </button>

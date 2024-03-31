@@ -18,7 +18,7 @@ export const DownLoadInfo = () => {
             lineHeight={'58px'}
             letterSpace={'0px'}
           >
-            Premium <span style={{ color: '#6C5FBC' }}>Quality</span>
+            Premium <span className='violetForHeader'>Quality</span>
           </Title>
           <Title
             size={'50px'}
@@ -39,19 +39,13 @@ export const DownLoadInfo = () => {
               and boosting immunity
             </li>
           </ul>
-          <div style={{ textAlign: 'left', marginTop: '66px' }}>
+          <div className={classes.btnContainer}>
             <Button
               btWidth={'188px'}
               btHeight={'60px'}
               btType={buttonType.filled}
             >
-              <div
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'space-evenly',
-                }}
-              >
+              <div className={classes.btnText}>
                 {' '}
                 Download <img src={arrow} alt='' />
               </div>

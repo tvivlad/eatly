@@ -8,6 +8,15 @@
   display: flex;
 }
 
+.commentMessage {
+  width: 100%;
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 700;
+  align-self: center;
+  color: #aaa;
+}
+
 /* HTML: <div class="loader"></div> */
 .loader {
   width: 50px;

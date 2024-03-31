@@ -40,3 +40,8 @@
   margin-top: 60px;
   margin-bottom: 90px;
 }
+.arrowBtnText {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

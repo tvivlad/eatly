@@ -3,6 +3,11 @@
   height: 300px;
   border-radius: 30px;
   box-shadow: 30px 30px 150px #ccc;
+  transition: 0.9s;
+}
+
+.dishCard:hover {
+  transform: translateY(-30px);
 }
 
 .category {

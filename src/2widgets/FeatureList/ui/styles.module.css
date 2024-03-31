@@ -12,3 +12,8 @@
   margin: 48px auto;
   display: flex;
 }
+
+.separator {
+  border-right: 1px solid #c5c5c5;
+  margin: 0px 60px;
+}

@@ -8,7 +8,7 @@ export const DishesTopList = () => {
   return (
     <div id='top' className={classes.dishesTopList}>
       <Title size={'45px'} weight={600} lineHeight={'26px'} letterSpace={'0px'}>
-        Our Top <span style={{ color: '#6C5FBC' }}>Lunch</span>
+        Our Top <span className='violetForHeader'>Lunch</span>
       </Title>
       <div className={classes.dishesList}>
         <DishCard

@@ -50,3 +50,10 @@
   top: 0px;
   right: 17px;
 }
+
+.cardContainer {
+  position: absolute;
+  top: 32px;
+  right: 54px;
+  z-index: 5;
+}

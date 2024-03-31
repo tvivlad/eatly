@@ -5,3 +5,11 @@
   justify-content: space-evenly;
   align-items: space-evenly;
 }
+
+.errorMessage {
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: #888;
+}

@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 import classes from './styles.module.css'
 import { UserInfo } from '../../../3features/UserInfo/ui'
 import star from '../../../5shared/assets/Star.png'
-import { articleAPI } from '../../../services/ArticleService'
+import { articleAPI } from '../api/ArticleService'
 import { Button, buttonType } from '../../../5shared/ui/Button'
 import arrowForButton from '../../../2widgets/ArticleDetail/ui/Arrow.png'
 import { useNavigate } from 'react-router-dom'
@@ -40,14 +40,13 @@ export const ArticleDetail: FC<ArticleDeatailProps> = ({ articleId }) => {
       </div>
 
       <div className={classes.text}>{data?.body}</div>
-      <Button btHeight={'60px'} btWidth={'186px'} btType={buttonType.outlined}>
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-evenly',
-          }}
-        >
+      <Button
+        btHeight={'60px'}
+        btWidth={'186px'}
+        btType={buttonType.outlined}
+        onClick={() => navigate('/blog')}
+      >
+        <div className={classes.arrowBtnText}>
           <img src={arrowForButton} alt='' className='' /> All Articles
         </div>
       </Button>

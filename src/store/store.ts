@@ -1,10 +1,11 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import postNavReducer from './reducers/PostNavSlice'
-import { postAPI } from '../services/PostService'
-import { commentAPI } from '../services/CommentService'
-import { userAPI } from '../services/UserService'
-import { articleAPI } from '../services/ArticleService'
-import { articleCommentAPI } from '../services/ArticleCommentService'
+import commentListReducer from './reducers/CommentListSlice'
+import { postAPI } from '../2widgets/ArticleList/api/PostService'
+import { commentAPI } from '../3features/ReviewList/api/CommentService'
+import { userAPI } from '../3features/UserInfo/api/UserService'
+import { articleAPI } from '../2widgets/ArticleDetail/api/ArticleService'
+import { articleCommentAPI } from '../3features/AddComment/api/ArticleCommentService'
 
 const rootReducer = combineReducers({
   [commentAPI.reducerPath]: commentAPI.reducer,
@@ -13,6 +14,7 @@ const rootReducer = combineReducers({
   [userAPI.reducerPath]: userAPI.reducer,
   [articleAPI.reducerPath]: articleAPI.reducer,
   [articleCommentAPI.reducerPath]: articleCommentAPI.reducer,
+  commentListReducer,
 })
 
 export const setupStore = () => {

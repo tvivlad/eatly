@@ -38,7 +38,7 @@ export const PurchaseText = () => {
           lineHeight={'58px'}
           letterSpace={'0px'}
         >
-          Control <span style={{ color: '#6C5FBC' }}>Purchases</span> Via
+          Control <span className='violetForHeader'>Purchases</span> Via
           Dashboard
         </Title>
       </div>

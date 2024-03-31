@@ -1,5 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import { ICommentList } from '../models/IComment'
+import { IComment, ICommentList } from '../model/IComment'
+import { INewComment } from '../model/INewComment'
 
 export const articleCommentAPI = createApi({
   reducerPath: 'ArticleCommentAPI',
@@ -8,6 +9,13 @@ export const articleCommentAPI = createApi({
     fetchArticleComments: build.query<ICommentList, string>({
       query: (postId: string) => ({
         url: `/comments/post/${postId}`,
+      }),
+    }),
+    createComment: build.mutation<IComment, INewComment>({
+      query: (comment) => ({
+        url: '/comments/add',
+        method: 'POST',
+        body: comment,
       }),
     }),
   }),

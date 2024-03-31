@@ -1,33 +1,32 @@
 import React, { FC } from 'react'
 import classes from './styles.module.css'
 import { Comment } from '../../../5shared/ui/Comment'
-import { articleCommentAPI } from '../../../services/ArticleCommentService'
-import { useNavigate } from 'react-router-dom'
+
 import { Loader } from '../../../5shared/ui/Loader'
+import { useAppSelector } from '../../../hooks/redux'
 
 interface ArticleCommentListProps {
-  articleId: string
+  isLoading: boolean
 }
 
 export const ArticleCommentList: FC<ArticleCommentListProps> = ({
-  articleId,
+  isLoading,
 }) => {
-  const { data, isLoading, error } =
-    articleCommentAPI.useFetchArticleCommentsQuery(articleId)
+  const { comments } = useAppSelector((state) => state.commentListReducer)
 
-  const navigate = useNavigate()
-  if (error) {
-    navigate('/error')
-  }
-
+  console.log('Article comment List updated!')
   if (isLoading) {
     return <Loader />
   }
   return (
     <div className={classes.commentList}>
       <div className={classes.comments}> Comments</div>
-      {data?.comments.map((comment) => (
-        <Comment nik={comment.user.username} text={comment.body} />
+      {comments.map((comment) => (
+        <Comment
+          key={comment.id}
+          nik={comment.user.username}
+          text={comment.body}
+        />
       ))}
     </div>
   )
