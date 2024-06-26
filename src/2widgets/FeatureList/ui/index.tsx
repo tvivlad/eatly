@@ -9,16 +9,12 @@ export const FeaturesList = () => {
           {' '}
           Satisfied Costumers All Great Over The World
         </Feature>
-        <div
-          style={{ borderRight: '1px solid #C5C5C5', margin: '0px 60px' }}
-        ></div>
+        <div className={classes.separator}></div>
         <Feature featureValue={'4M'}>
           {' '}
           Healthy Dishes SoldIncluding Milk Shakes Smooth
         </Feature>
-        <div
-          style={{ borderRight: '1px solid #C5C5C5', margin: '0px 60px' }}
-        ></div>
+        <div className={classes.separator}></div>
         <Feature featureValue={'99.99%'}>
           {' '}
           Reliable Customer SupportWe Provide Great Experiences

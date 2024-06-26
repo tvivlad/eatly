@@ -10,19 +10,20 @@ import { Purchases } from '../../../2widgets/PurchaseIllustration/ui'
 import { Review } from '../../../2widgets/Review/ui'
 import { FAQ } from '../../../2widgets/FAQ/ui'
 import { Footer } from '../../../2widgets/Footer/ui'
+import classes from './styles.module.css'
 
 export const MainPage = () => {
   return (
     <div className='App'>
       <Header />
-      <div style={{ display: 'flex', alignItems: 'start' }}>
+      <div className={classes.heroBlockContainer}>
         <HeroBlock />
         <Hero />
       </div>
       <FeaturesList />
       <DownLoadInfo />
       <DishesTopList />
-      <div style={{ display: 'flex', marginLeft: '111px' }}>
+      <div className={classes.purchaseBlockContainer}>
         <PurchaseText />
         <Purchases />
       </div>

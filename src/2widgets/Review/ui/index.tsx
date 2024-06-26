@@ -6,7 +6,7 @@ export const Review = () => {
   return (
     <div className={classes.review}>
       <Title size={'45px'} weight={600} lineHeight={'26px'} letterSpace={'0px'}>
-        <span style={{ color: '#6C5FBC' }}>Customer</span> Say
+        <span className='violetForHeader'>Customer</span> Say
       </Title>
       <ReviewList />
     </div>

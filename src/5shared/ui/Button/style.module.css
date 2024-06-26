@@ -6,6 +6,8 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 23px;
+  border: 0px;
+  transition: 1s;
 }
 
 .outlinedBtn {
@@ -16,4 +18,15 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 23px;
+  border: 0px solid #5c4eae;
+}
+
+.filledBtn:hover {
+  box-sizing: border-box;
+  background-color: #9586ec;
+}
+
+.outlinedBtn:hover {
+  box-sizing: border-box;
+  border: 2px solid #5c4eae;
 }

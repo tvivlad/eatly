@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
-interface PostNavState {
+export interface PostNavState {
   currentPage: number
   totalPages: number
   limit: number
@@ -32,4 +32,6 @@ export const postNavSlice = createSlice({
   },
 })
 
+export const { actions } = postNavSlice
+export const { reducer } = postNavSlice
 export default postNavSlice.reducer

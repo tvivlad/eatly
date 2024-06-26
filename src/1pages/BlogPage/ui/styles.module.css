@@ -2,3 +2,10 @@
   width: 1440px;
   margin: 0px auto;
 }
+.article {
+  margin-top: 70px;
+}
+
+.titleAlign {
+  text-align: center;
+}

@@ -14,7 +14,7 @@ export const FAQ = () => {
           letterSpace={'0px'}
         >
           <div style={{ textAlign: 'center' }}>
-            Frequently Asked <span style={{ color: '#6C5FBC' }}>Questions</span>
+            Frequently Asked <span className='violetForHeader'>Questions</span>
           </div>
         </Title>
       </div>

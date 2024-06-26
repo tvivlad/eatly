@@ -15,14 +15,7 @@ export const Hero = () => {
       <img className={classes.graph} src={graph} alt='' />
       <img className={classes.arrow} src={arrow} alt='' />
       <img className={classes.illustration1} src={illustration1} alt='' />
-      <div
-        style={{
-          position: 'absolute',
-          top: '32px',
-          right: '54px',
-          zIndex: '5',
-        }}
-      >
+      <div className={classes.cardContainer}>
         <OrderCard
           orderName={'Chicken Hell'}
           orderStatus={'On the Way'}

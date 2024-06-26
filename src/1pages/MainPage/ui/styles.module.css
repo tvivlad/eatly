@@ -1,0 +1,8 @@
+.heroBlockContainer {
+  display: flex;
+  align-items: start;
+}
+.purchaseBlockContainer {
+  display: flex;
+  margin-left: 111px;
+}

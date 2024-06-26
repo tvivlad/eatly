@@ -1,13 +1,17 @@
 import React from 'react'
 import classes from './styles.module.css'
-import { ArticleCard } from '../../../5shared/ui/ArticleCard/ui'
-import { postAPI } from '../../../services/PostService'
+import { postAPI } from '../api/PostService'
 import { useAppDispatch, useAppSelector } from '../../../hooks/redux'
 import { postNavSlice } from '../../../store/reducers/PostNavSlice'
 import { Loader } from '../../../5shared/ui/Loader'
+import { ArticleCard } from '../../../4entities/ArticleCard/ui'
+import { useNavigate } from 'react-router-dom'
+import { SerializedError } from '@reduxjs/toolkit'
+import { FetchBaseQueryError } from '@reduxjs/toolkit/query'
 export const ArticleList = () => {
+  const navigate = useNavigate()
   const { limit, currentPage } = useAppSelector((state) => state.postNavReducer)
-  const { data, isLoading, error } = postAPI.useFetchPostsQuery(
+  const { data, isLoading, isFetching, error } = postAPI.useFetchPostsQuery(
     limit * (currentPage - 1)
   )
 
@@ -16,13 +20,25 @@ export const ArticleList = () => {
   if (data) {
     dispatch(setTotalPageNumber(data.total))
   }
-  console.log('data :', data)
 
-  if (isLoading) {
+  if (isFetching) {
     return <Loader />
   }
+
+  if (error) {
+    if ((error as FetchBaseQueryError).data == 'error not found!') {
+      navigate('/error')
+    }
+  }
+
   return (
     <div className={classes.articleList}>
+      {error && (
+        <div className={classes.errorMessage}>
+          {' '}
+          Посты не удалось загрузить...
+        </div>
+      )}
       {data &&
         data.posts.map((post) => (
           <ArticleCard
@@ -32,6 +48,7 @@ export const ArticleList = () => {
             hashTag={post.tags.join(' #')}
             rating={post.reactions}
             text={post.body}
+            userId={post.userId}
           />
         ))}
     </div>
