@@ -1,0 +1,19 @@
+.filledBtn {
+  color: #ffffff;
+  background-color: #5c4eae;
+  border-radius: 12px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.outlinedBtn {
+  color: #5c4eae;
+  border: 1px solid #5c4eae;
+  border-radius: 12px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23px;
+}

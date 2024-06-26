@@ -1,0 +1,61 @@
+.purchaseFeatureCard {
+  width: 458px;
+  height: 132px;
+  border: 1px solid #edf2f7;
+  border-radius: 19px;
+  margin-bottom: 20px;
+}
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px;
+}
+
+.featureLeftSide {
+  display: flex;
+  align-items: flex-start;
+}
+
+.featureNameAndStatus {
+  margin-left: 19px;
+}
+.featureName {
+  font-family: Manrope;
+  font-weight: 900;
+  line-height: 150%;
+  font-size: 19px;
+  text-align: start;
+  color: #1a202c;
+}
+.featureStatus {
+  font-size: 18px;
+  text-align: start;
+  color: #aaa;
+}
+
+.featureEffect {
+  font-family: Manrope;
+  font-weight: 900;
+  font-size: 22;
+  line-height: 150%;
+  color: #1a202c;
+}
+
+.progressBarBack {
+  margin: 0px auto;
+  width: 408px;
+  height: 9px;
+  border-radius: 7px;
+  background-color: #fbad18;
+  background-color: #fbad1844;
+}
+
+.progressBarFront {
+  width: 280px;
+  height: 9px;
+  border-radius: 7px;
+  background-color: #fbad18;
+  opacity: 1;
+}

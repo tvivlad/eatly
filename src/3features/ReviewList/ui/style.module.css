@@ -1,0 +1,9 @@
+.reviewList {
+  width: 1440px;
+  overflow: hidden;
+  height: 307px;
+  padding-top: 50px;
+  /* border: 1px solid black; */
+  align-self: self-start;
+  display: flex;
+}

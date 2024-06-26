@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  width: 1248px;
+  height: 61px;
+  margin: 50px auto 25px;
+}
+
+.logo {
+  width: 117px;
+  height: 43px;
+  margin-top: 9px;
+  margin-right: 98px;
+}
+
+.line {
+  border-top: 1px solid #cbcbcb;
+  width: 1248px;
+  margin: 25px auto 0px;
+}

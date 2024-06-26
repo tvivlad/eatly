@@ -1,0 +1,13 @@
+.purchaseText {
+  width: 571px;
+}
+
+.purchaseTextTitle {
+  width: 560px;
+}
+
+.orderList {
+  margin-top: 47px;
+  display: flex;
+  flex-direction: column;
+}

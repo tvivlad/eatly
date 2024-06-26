@@ -1,0 +1,48 @@
+.dishCard {
+  width: 400px;
+  height: 300px;
+  border-radius: 30px;
+  box-shadow: 30px 30px 150px #ccc;
+}
+
+.category {
+  margin-left: 34px;
+  width: 44px;
+  height: 26px;
+  background-color: #f7edd0;
+  color: #daa31a;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 4px;
+  line-height: auto;
+}
+
+.name {
+  margin-left: 34px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 42px;
+  text-align: left;
+}
+.time {
+  margin-left: 34px;
+  font-family: Manrope;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  color: #8e97a6;
+  text-align: left;
+  display: flex;
+}
+
+.dishPict {
+  /* object-fit: cover; */
+  height: 176px;
+}
+
+.star {
+  padding: 0px;
+}

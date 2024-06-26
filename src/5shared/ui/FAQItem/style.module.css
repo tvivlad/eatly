@@ -1,0 +1,32 @@
+.question {
+  width: 1152px;
+  border-bottom: 1px solid #adadad;
+  text-align: start;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+.questionText {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 59px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.answerText {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  color: #686868;
+}
+.btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #6c5fbc;
+  color: #ffffff;
+  font-size: 24px;
+}
