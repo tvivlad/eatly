@@ -1,16 +1,6 @@
-.reviewList {
-  width: 1440px;
-  overflow: hidden;
-  height: 307px;
-  padding-top: 50px;
-  /* border: 1px solid black; */
-  align-self: self-start;
-  display: flex;
-}
-
-/* HTML: <div class="loader"></div> */
 .loader {
   width: 50px;
+  margin: 30px auto;
   padding: 8px;
   aspect-ratio: 1;
   border-radius: 50%;

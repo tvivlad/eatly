@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom'
 const NavigationBar = () => {
   return (
     <div className={classes.navbar}>
-      <Link to={'#'} className={classes.link}>
+      <a href={'/#top'} className={classes.link}>
         Recipes
-      </Link>
-      <Link to={'#'} className={classes.link}>
+      </a>
+      <a href={'/#faq'} className={classes.link}>
         FAQ
-      </Link>
-      <Link to={'#'} className={classes.link}>
+      </a>
+      <Link to={'/blog'} className={classes.link}>
         Blog
       </Link>
     </div>

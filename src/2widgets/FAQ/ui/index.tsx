@@ -5,7 +5,7 @@ import classes from './style.module.css'
 
 export const FAQ = () => {
   return (
-    <div className={classes.faq}>
+    <div id='faq' className={classes.faq}>
       <div className={classes.faqTitleBlock}>
         <Title
           size={'45px'}
